@@ -1,0 +1,511 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.sidebar {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.poll-results p {
+  margin: 0;
+}
+
+/* Mona Page Specific Styles */
+.mona-page {
+  color: #333;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header Styling for mona */
+.mona-page header {
+  height: 110px;
+  position: sticky;
+  background-color: #8B008B;
+  color: #fff;
+}
+
+.mona-page header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Carousel Styling */
+.mona-page .carousel {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mona-page .carousel img {
+  object-fit: cover;
+  height: 800px;
+}
+
+/* Cards in the Sidebar */
+.mona-page aside {
+  color: #8B008B;
+  flex: 0 0 300px;
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+  padding-bottom: 1rem;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+/* Main Content Styling */
+.mona-page main {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mona-page main h2 {
+  color: #8B008B;
+  border-bottom: 2px solid #8B008B;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mona-page main p {
+  color: #8B008B;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.mona-page .container-fluid {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 110px);
+  overflow: hidden;
+}
+
+/* Footer Styling */
+.mona-page footer {
+  background-color: #8B008B;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mona-page footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mona-page {
+    overflow: visible;
+  }
+  
+  .mona-page .container-fluid {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .mona-page aside {
+    flex: none;
+    height: auto;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .mona-page main {
+    height: auto;
+    overflow-y: visible;
+  }
+  
+  .mona-page header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+  .mona-page .carousel img {
+    height: auto;
+  }
+
+@media (max-width: 480px) {
+  .mona-page {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .mona-page main p {
+    font-size: 0.9rem;
+  }
+
+  .mona-page header h1 {
+    font-size: 1.2rem;
+  }
+  
+  .mona-page .container-fluid {
+  flex-direction: column;
+  height: auto;
+  padding: 0 1rem;
+}
+  
+  .mona-page aside {
+    margin-bottom: 1rem;
+  flex: none;
+  height: auto;
+}
+
+.mona-page main {
+  padding: 1rem;
+  height: auto;
+  overflow-y: visible;
+}
+
+.mona-page .carousel img {
+  height: auto;
+}
+}
+    
+
+
+/* Tenley Page Specific Styles */
+.tenley-page {
+    color: #333;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header Styling for Tenley */
+.tenley-page header {
+  height: 110px;
+  position: sticky;
+  background-color: #8b4513;
+  color: #fff;
+}
+
+.tenley-page header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Carousel Styling */
+.tenley-page .carousel {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tenley-page .carousel img {
+  object-fit: cover;
+  height: 800px;
+}
+
+/* Cards in the Sidebar */
+.tenley-page aside {
+  color: #8b4513;
+  flex: 0 0 300px;
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+  padding-bottom: 1rem;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+/* Main Content Styling */
+.tenley-page main {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tenley-page main h2 {
+  color: #8b4513;
+  border-bottom: 2px solid #8b4513;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tenley-page main p {
+  color: #8b4513;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.tenley-page .container-fluid {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 110px);
+  overflow: hidden;
+}
+
+/* Footer Styling */
+.tenley-page footer {
+  background-color: #8b4513;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tenley-page footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tenley-page {
+    overflow: visible;
+  }
+  
+  .tenley-page .container-fluid {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .tenley-page aside {
+    flex: none;
+    height: auto;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .tenley-page main {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .tenley-page header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+  .tenley-page .carousel img {
+    height: auto;
+  }
+
+@media (max-width: 480px) {
+  .tenley-page {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .tenley-page main p {
+    font-size: 0.9rem;
+  }
+  
+  .tenley-page header h1 {
+    font-size: 1.2rem;
+  }
+  
+  .tenley-page .container-fluid {
+  flex-direction: column;
+  height: auto;
+  padding: 0 1rem;
+}
+
+.tenley-page aside {
+  margin-bottom: 1rem;
+  flex: none;
+  height: auto;
+}
+
+  .tenley-page main {
+    padding: 1rem;
+  height: auto;
+  overflow-y: visible;
+}
+
+.tenley-page .carousel img {
+  height: auto;
+}
+}
+
+
+    /* Maxwell Page Specific Styles */
+    .maxwell-page {
+      color: #333;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    /* Header Styling for Maxwell */
+    .maxwell-page header {
+      height: 110px;
+      position: sticky;
+      background-color: #8B0000;
+      color: #fff;
+    }
+    
+    .maxwell-page header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    /* Carousel Styling */
+    .maxwell-page .carousel {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .maxwell-page .carousel img {
+      object-fit: cover;
+      height: 800px;
+    }
+    
+    /* Cards in the Sidebar */
+    .maxwell-page aside {
+      color: #8B0000;
+      flex: 0 0 300px;
+      height: calc(100vh - 110px);
+      overflow-y: auto;
+      padding-bottom: 1rem;
+      background-color: #f8f8f8;
+      border-right: 1px solid #ddd;
+      padding: 1rem;
+    }
+    
+    /* Main Content Styling */
+    .maxwell-page main {
+      flex: 1;
+      height: 100%;
+      overflow-y: auto;
+      padding: 2rem;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .maxwell-page main h2 {
+      color: #8B0000;
+      border-bottom: 2px solid #8B0000;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .maxwell-page main p {
+      color: #8B0000;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    
+    .maxwell-page .container-fluid {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 110px);
+      overflow: hidden;
+    }
+    
+    /* Footer Styling */
+    .maxwell-page footer {
+      background-color: #8B0000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    .maxwell-page footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .maxwell-page {
+        overflow: visible;
+      }
+    
+      .maxwell-page .container-fluid {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .maxwell-page aside {
+        flex: none;
+        height: auto;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+    
+      .maxwell-page main {
+        height: auto;
+        overflow-y: visible;
+      }
+    
+      .maxwell-page header h1 {
+        font-size: 1.5rem;
+      }
+    }
+    
+      .maxwell-page .carousel img {
+        height: auto;
+      }
+    
+    @media (max-width: 480px) {
+      .maxwell-page {
+        height: auto;
+        overflow: visible;
+      }
+    
+      .maxwell-page main p {
+        font-size: 0.9rem;
+      }
+    
+      .maxwell-page header h1 {
+        font-size: 1.2rem;
+      }
+      
+      .maxwell-page .container-fluid {
+      flex-direction: column;
+      height: auto;
+      padding: 0 1rem;
+    }
+      
+      .maxwell-page aside {
+      margin-bottom: 1rem;
+      flex: none;
+      height: auto;
+    }
+    
+      .maxwell-page main {
+      padding: 1rem;
+      height: auto;
+      overflow-y: visible;
+    }
+    
+      .maxwell-page .carousel img {
+      height: auto;
+    }
+    }
